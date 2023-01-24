@@ -51,8 +51,9 @@ int main() {
 
     // World
     hittable_list world;
-    world.add(make_shared<sphere>(point3(0, 0, -1), 0.5));
-    world.add(make_shared<sphere>(point3(0, -100.5, -1), 100));
+    // FIXME: add shared pointer argument to spheres
+    // world.add(make_shared<sphere>(point3(0, 0, -1), 0.5));
+    // world.add(make_shared<sphere>(point3(0, -100.5, -1), 100));
 
     // Camera
     camera cam;
